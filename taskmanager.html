@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script type="text/javascript" src="taskmanager.js"></script>
+        <link href="taskmanager.css" rel="stylesheet" type="text/css" media="all">
+    </head>
+    <body> 
+            <div id="totalDuration">
+                Total Duration: 0
+            </div>
+           
+            Task title: <input type="text" name="title" id="title">
+            <br/>
+            Task Description: <input type="text" name="desc" id="desc">
+            <br/>
+            Start time: <input type="date" name="start_date" id="sd">
+            <input type="time" name="start_time"id="st" value="12:00">
+            <br />
+            Stop time: <input type="date" name="end_date" id="ed">
+            <input type="time" name="end_time"id="et" value="12:00">
+            <br/>
+            <button onClick="saveTask()">Save</button>
+
+            <!--<ul id="tasks" class="js-todo-list"></ul>-->
+            <table id="tasks" class="js-todo-list">
+                <tr>
+                    <td>Task title</td>
+                    <td>Task description</td>
+                    <td>Task Duration</td>
+                    <td>Task Starting date</td>
+                    <td>Task Ending date</td>
+                    <td>Task Staring time</td>
+                    <td>Task Ending time</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+        </body>
+</html>
